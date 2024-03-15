@@ -38,7 +38,7 @@ class CustomETF(Strategy):
                 "weight": 0.31,
             },
             {
-                "asset": Asset(symbol="LTC", asset_type="crypto"),
+                "asset": Asset(symbol="SOL", asset_type="crypto"),
                 # "quote": Asset(symbol="USDT", asset_type="crypto"),  # Use for Kucoin
                 "quote": Asset(symbol="USD", asset_type="forex"),  # For Alpaca/Backtest
                 "weight": 0.31,
@@ -197,7 +197,7 @@ if __name__ == "__main__":
         trader.add_strategy(strategy)
         trader.run_all()
 
-    elif IS_BACKTESTING.lower() == "true":
+    else:
         ####
         # Backtest the strategy
         ####
@@ -224,9 +224,4 @@ if __name__ == "__main__":
             sell_trading_fees=[trading_fee],
             polygon_api_key=POLYGON_CONFIG["API_KEY"],
             polygon_has_paid_subscription=POLYGON_CONFIG["IS_PAID_SUBSCRIPTION"],
-        )
-
-    else:
-        raise ValueError(
-            f"IS_BACKTESTING must be either True or False, but it is {IS_BACKTESTING}"
         )

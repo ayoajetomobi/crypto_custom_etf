@@ -41,3 +41,13 @@ TRADIER_CONFIG = {
     if os.environ.get("TRADIER_IS_PAPER")
     else True,
 }
+
+KRAKEN_CONFIG = {
+    "exchange_id": "kraken",
+    # Put your own Kraken key here:
+    "apiKey": os.environ.get("KRAKEN_API_KEY"),
+    # Put your own Kraken secret here:
+    "secret": os.environ.get("KRAKEN_API_SECRET"),
+    "margin": True,
+    "sandbox": False,
+}
