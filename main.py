@@ -187,13 +187,21 @@ if __name__ == "__main__":
         ############################################
         from lumibot.brokers import Alpaca
 
-        from credentials import ALPACA_CONFIG
+        from credentials import (
+            ACCOUNT_HISTORY_DB_CONNECTION_STR,
+            ALPACA_CONFIG,
+            DISCORD_WEBHOOK_URL,
+        )
 
         trader = Trader()
 
         broker = Alpaca(ALPACA_CONFIG)
 
-        strategy = CustomETF(broker=broker)
+        strategy = CustomETF(
+            broker=broker,
+            discord_webhook_url=DISCORD_WEBHOOK_URL,
+            account_history_db_connection_str=ACCOUNT_HISTORY_DB_CONNECTION_STR,
+            )
         trader.add_strategy(strategy)
         trader.run_all()
 

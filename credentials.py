@@ -11,6 +11,12 @@ if not is_backtesting or is_backtesting.lower() == "false":
 else:
     IS_BACKTESTING = True
 
+# Discord credentials
+DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
+
+# Database connection string
+ACCOUNT_HISTORY_DB_CONNECTION_STR = os.environ.get("ACCOUNT_HISTORY_DB_CONNECTION_STR")
+
 POLYGON_CONFIG = {
     # Put your own Polygon key here:
     "API_KEY": os.environ.get("POLYGON_API_KEY"),
