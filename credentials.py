@@ -18,7 +18,7 @@ DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 ACCOUNT_HISTORY_DB_CONNECTION_STR = os.environ.get("ACCOUNT_HISTORY_DB_CONNECTION_STR")
 
 POLYGON_CONFIG = {
-    # Put your own Polygon key here:
+    # Add POLYGON_API_KEY and POLYGON_IS_PAID_SUBSCRIPTION to your .env file or set them as secrets
     "API_KEY": os.environ.get("POLYGON_API_KEY"),
     "IS_PAID_SUBSCRIPTION": os.environ.get("POLYGON_IS_PAID_SUBSCRIPTION").lower()
     == "true"
@@ -27,33 +27,37 @@ POLYGON_CONFIG = {
 }
 
 ALPACA_CONFIG = {  # Paper trading!
-    # Put your own Alpaca key here:
+    # Add ALPACA_API_KEY, ALPACA_API_SECRET, and ALPACA_IS_PAPER to your .env file or set them as secrets
     "API_KEY": os.environ.get("ALPACA_API_KEY"),
-    # Put your own Alpaca secret here:
     "API_SECRET": os.environ.get("ALPACA_API_SECRET"),
-    # If you want to use real money you must change this to False
     "PAPER": os.environ.get("ALPACA_IS_PAPER").lower() == "true"
     if os.environ.get("ALPACA_IS_PAPER")
     else True,
 }
 
 TRADIER_CONFIG = {
-    # Put your own Tradier key here:
+    # Add TRADIER_ACCESS_TOKEN, TRADIER_ACCOUNT_NUMBER, and TRADIER_IS_PAPER to your .env file or set them as secrets
     "ACCESS_TOKEN": os.environ.get("TRADIER_ACCESS_TOKEN"),
-    # Put your own Tradier account number here:
     "ACCOUNT_NUMBER": os.environ.get("TRADIER_ACCOUNT_NUMBER"),
-    # If you want to use real money you must change this to False
     "PAPER": os.environ.get("TRADIER_IS_PAPER").lower() == "true"
     if os.environ.get("TRADIER_IS_PAPER")
     else True,
 }
 
 KRAKEN_CONFIG = {
+    # Add KRAKEN_API_KEY and KRAKEN_API_SECRET to your .env file or set them as secrets
     "exchange_id": "kraken",
-    # Put your own Kraken key here:
     "apiKey": os.environ.get("KRAKEN_API_KEY"),
-    # Put your own Kraken secret here:
     "secret": os.environ.get("KRAKEN_API_SECRET"),
     "margin": True,
+    "sandbox": False,
+}
+
+COINBASE_CONFIG = {
+    # Add COINBASE_API_KEY and COINBASE_API_SECRET to your .env file or set them as secrets
+    "exchange_id": "coinbase",
+    "apiKey": os.environ.get("COINBASE_API_KEY"),
+    "secret": os.environ.get("COINBASE_API_SECRET"),
+    "margin": False,
     "sandbox": False,
 }
