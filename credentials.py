@@ -1,4 +1,5 @@
 import os
+from lumibot.brokers import Alpaca, Ccxt, Tradier
 
 import dotenv
 
@@ -61,3 +62,26 @@ COINBASE_CONFIG = {
     "margin": False,
     "sandbox": False,
 }
+
+if IS_BACKTESTING:
+    broker = None
+else:
+    # If using Alpaca as a broker, set that as the broker
+    if ALPACA_CONFIG["API_KEY"]:
+        broker = Alpaca(ALPACA_CONFIG)
+
+    # If using Tradier as a broker, set that as the broker
+    elif TRADIER_CONFIG["ACCESS_TOKEN"]:
+        broker = Tradier(TRADIER_CONFIG)
+
+    # If using Coinbase as a broker, set that as the broker
+    elif COINBASE_CONFIG["apiKey"]:
+        broker = Ccxt(COINBASE_CONFIG)
+
+    # If using Kraken as a broker, set that as the broker
+    elif KRAKEN_CONFIG["apiKey"]:
+        broker = Ccxt(KRAKEN_CONFIG)
+
+    # If no broker is set, raise an error
+    else:
+        raise ValueError("No broker set! Please set a broker in a .env file or as a secret.")

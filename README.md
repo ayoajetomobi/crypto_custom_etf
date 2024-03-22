@@ -42,8 +42,10 @@ If you are running the strategy on your own computer, you can set these as envir
 
 | Secret            | Description                                                                                   | Example                                 |
 |-------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------|
-| ALPACA_API_KEY    | Your API key from your Alpaca brokerage account                                               | PK7T6YVAX6PMH1EM20YN                    |
-| ALPACA_API_SECRET | Your secret key from your Alpaca brokerage account                                            | 9WgJLS3wIXq54FCpHwwZjCp8JCfJfKuwSrYskKMA |
+| COINBASE_API_KEY  | Your Coinbase API Key                                                                         | 341JGHJLis6dLErR4                         |
+| COINBASE_API_SECRET | Your Coinbase API Secret                                                                     | 9WgJLS3wI3q54FCpLwwZjCp8JCfJfKuwSrYskPMA |
+| ALPACA_API_KEY    | **(Optional)** Your API key from your Alpaca brokerage account                                               | PK7T6YVAX6PMH1EM20YN                    |
+| ALPACA_API_SECRET | **(Optional)** Your secret key from your Alpaca brokerage account                                            | 9WgJLS3wIXq54FCpHwwZjCp8JCfJfKuwSrYskKMA |
 | ALPACA_IS_PAPER   | **(Optional)** Set to "True" to use the Alpaca paper trading API, set to "False" to use the Alpaca real money trading API (defaults to True) | True                                  |
 | IS_BACKTESTING    | **(Optional)** Set to "True" to run the strategy in backtesting mode, set to "False" to run the strategy live (defaults to False) | False                                  |
 | POLYGON_API_KEY   | **(Optional)** Your API key from your Polygon account, only needed if you are backtesting                    | a7py0zIdhxde6QkX8OjjKNp7cD87hwKU        |

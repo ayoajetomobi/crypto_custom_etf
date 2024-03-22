@@ -29,19 +29,26 @@ class CustomETF(Strategy):
                 "asset": Asset(symbol="ETH", asset_type="crypto"),
                 # "quote": Asset(symbol="USDT", asset_type="crypto"),  # Use for Kucoin
                 "quote": Asset(symbol="USD", asset_type="forex"),  # For Alpaca/Backtest
-                "weight": 0.31,
+                # "weight": 0.31,
+                "weight": 0.24,
             },
             {
                 "asset": Asset(symbol="BTC", asset_type="crypto"),
                 # "quote": Asset(symbol="USDT", asset_type="crypto"),  # Use for Kucoin
                 "quote": Asset(symbol="USD", asset_type="forex"),  # For Alpaca/Backtest
-                "weight": 0.31,
+                "weight": 0.24,
             },
             {
                 "asset": Asset(symbol="SOL", asset_type="crypto"),
                 # "quote": Asset(symbol="USDT", asset_type="crypto"),  # Use for Kucoin
                 "quote": Asset(symbol="USD", asset_type="forex"),  # For Alpaca/Backtest
-                "weight": 0.31,
+                "weight": 0.24,
+            },
+            {
+                "asset": Asset(symbol="MATIC", asset_type="crypto"),
+                # "quote": Asset(symbol="USDT", asset_type="crypto"),  # Use for Kucoin
+                "quote": Asset(symbol="USD", asset_type="forex"),  # For Alpaca/Backtest
+                "weight": 0.24,
             },
         ],
         "rebalance_period": 10,
@@ -185,18 +192,14 @@ if __name__ == "__main__":
         ############################################
         # Run the strategy live
         ############################################
-        from lumibot.brokers import Alpaca
 
         from credentials import (
             ACCOUNT_HISTORY_DB_CONNECTION_STR,
-            ALPACA_CONFIG,
             DISCORD_WEBHOOK_URL,
+            broker,
         )
 
         trader = Trader()
-
-        broker = Alpaca(ALPACA_CONFIG)
-
         strategy = CustomETF(
             broker=broker,
             discord_webhook_url=DISCORD_WEBHOOK_URL,
