@@ -204,6 +204,10 @@ if __name__ == "__main__":
             broker=broker,
             discord_webhook_url=DISCORD_WEBHOOK_URL,
             account_history_db_connection_str=ACCOUNT_HISTORY_DB_CONNECTION_STR,
+            discord_account_summary_footer=
+        "This strategy code is available as part of the [**Starter Plan**](<https://lumiwealth.com/starter-plan/>)\n"
+        "If you have the Starter Plan or higher [**Click Here To Run This Strategy**](<https://github.com/Lumiwealth-Strategies/crypto_custom_etf>)\n"
+        "**IMPORTANT:** Access to this algorithm is not automatic. If you get a 404 Error then please contact <@479785401209323535> for us to give you access. Also, make sure you are logged into GitHub.",
             )
         trader.add_strategy(strategy)
         trader.run_all()
