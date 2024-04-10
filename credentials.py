@@ -1,3 +1,11 @@
+# NOTE: 
+# This file is not meant to be modified. This file loads the credentials from the ".env" file or secrets and sets them as environment variables.
+# If you want to set the environment variables on your computer, you can do so by creating a ".env" file in the root directory of the project
+# and adding the variables described in the "Secrets Configuration" section of the README.md file like this (but without the "# " at the front):
+# IS_BACKTESTING=True
+# POLYGON_API_KEY=p0izKxeskywlLjKi82NLrQPUvSzvlYVT
+# etc.
+
 import os
 from lumibot.brokers import Alpaca, Ccxt, Tradier
 
@@ -17,6 +25,9 @@ DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
 # Database connection string
 ACCOUNT_HISTORY_DB_CONNECTION_STR = os.environ.get("ACCOUNT_HISTORY_DB_CONNECTION_STR")
+
+# Name for the strategy to be used in the database
+STRATEGY_NAME = os.environ.get("STRATEGY_NAME")
 
 POLYGON_CONFIG = {
     # Add POLYGON_API_KEY and POLYGON_IS_PAID_SUBSCRIPTION to your .env file or set them as secrets

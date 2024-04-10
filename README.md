@@ -1,6 +1,6 @@
 # Disclaimer
 
-This strategy and the accompanying code are provided for educational purposes only and are not intended to be used with real money or as investment advice. They are meant to be used as tools for financial analysis and should not be the sole basis for any investment decisions. Lumiwealth is not a licensed investment advisor.
+This strategy and the accompanying code are provided by Lumiwealth for educational purposes only. They are not intended for use with real money nor should they be construed as investment advice. The tools are designed for financial analysis and should not form the sole basis of any investment decisions. Please be aware that Lumiwealth is not a licensed investment advisor.
 
 1. Hypothetical Performance: Any backtesting results presented are hypothetical and do not represent actual trading. Past performance is not indicative of future results. There is no guarantee that the strategy will perform similarly in the future, nor is there any assurance of profitability.
 
@@ -10,11 +10,13 @@ This strategy and the accompanying code are provided for educational purposes on
 
 4. Information Accuracy: All accompanying information, including strategy descriptions, backtests, etc., is provided without warranty and may be subject to errors or inaccuracies. Lumiwealth reserves the right to make changes to the code and information at any time without notice.
 
-5. License: For detailed licensing information, please refer to the [license](LICENSE).
+5. Intellectual Property: The code, along with any documentation or related materials, is the proprietary property of Lumiwealth. Unauthorized copying, distribution, or resale of the code is strictly prohibited. Users must delete all copies of the code upon termination of their subscription or service agreement with Lumiwealth.
 
-6. Scope of Agreement: This disclaimer is specific to the strategy and code in question and does not supersede the broader Terms of Service agreed upon during the Lumiwealth signup process. It is an integral part of the larger legal framework governing your use of Lumiwealth's services.
+6. License: For detailed licensing information, please refer to the [license](LICENSE).
 
-By using this strategy and code, you acknowledge and agree to the terms outlined in this disclaimer, which form part of the agreement between you and Lumiwealth.
+7. Scope of Agreement: This disclaimer is specific to the strategy and code in question and does not supersede the broader Terms of Service agreed upon during the Lumiwealth signup process. It is an integral part of the larger legal framework governing your use of Lumiwealth's services.
+
+By using this strategy and code, you acknowledge and agree to the terms outlined in this disclaimer, which form part of the agreement between you and Lumiwealth. Your agreement to these terms, as part of your use of the strategy and code, is acknowledged by your continued use of Lumiwealth's services.
 
 # Strategy Description
 
