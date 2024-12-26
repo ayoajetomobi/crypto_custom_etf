@@ -1,0 +1,21 @@
+services:
+  - type: worker
+    name: stock-example-algo
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python src/main.py
+    autoDeploy: false  # Prevents automatic redeploy on GitHub changes
+    envVars:
+      - key: ALPACA_API_KEY
+        value: ""
+      - key: ALPACA_API_SECRET
+        value: ""
+      - key: LIVE_CONFIG
+        value: ""
+      - key: ALPACA_IS_PAPER
+        value: "True"
+      - key: MARKET
+        value: "24/7"
+      - key: STRATEGY_NAME
+        # This should be the name of the strategy + the live config name
+        value: "StockExampleAlgo"
