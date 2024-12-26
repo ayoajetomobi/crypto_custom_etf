@@ -1,6 +1,6 @@
 services:
   - type: worker
-    name: stock-example-algo
+    name: crypto_custom_etf
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python src/main.py
@@ -18,4 +18,4 @@ services:
         value: "24/7"
       - key: STRATEGY_NAME
         # This should be the name of the strategy + the live config name
-        value: "StockExampleAlgo"
+        value: "crypto_custom_etf"
