@@ -30,11 +30,27 @@ if you have 3 assets in your portfolio, each with a weight of 0.33, then each as
 
 # Getting Started
 
-To run this strategy on Replit you need to click the "Run on Repl.it" button below and fill in your secret keys in the replit secrets tab. 
+To run this strategy on Replit or Render, click on the buttons below. This will open the strategy on the respective platform. You can then follow the instructions in the [Deployment Guide](https://lumibot.lumiwealth.com/deployment.html) to set up the strategy.
  
 ### TIP: Right click on the button and open it in a new tab so that you can see the instructions while you are setting up the strategy (otherwise you will have to press the back button to see the instructions again).
 
-[![Run on Repl.it](https://replit.com/badge/github/Lumiwealth-Strategies/crypto_custom_etf)](https://replit.com/new/github/Lumiwealth-Strategies/crypto_custom_etf)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Lumiwealth-Strategies/stock_example_algo)
+
+[![Run on Repl.it](https://replit.com/badge/github/Lumiwealth-Strategies/stock_example_algo)](https://replit.com/new/github/Lumiwealth-Strategies/stock_example_algo)
+
+# How to Run the Strategy
+
+The full guide on how to run the strategy is available in the [Deployment Guide](https://lumibot.lumiwealth.com/deployment.html).
+
+[Click here for instructions](https://lumibot.lumiwealth.com/deployment.html)
+
+To get your bot live and trading, follow these quick steps:
+
+1.	Choose Your Platform: We recommend deploying on either Render or Replit for ease and affordability.
+•	[Deploy on Render](https://lumibot.lumiwealth.com/deployment.html#deploying-to-render)
+•	[Deploy on Replit](https://lumibot.lumiwealth.com/deployment.html#deploying-to-replit)
+2.	Configure Your Secrets: Set up your environment variables (e.g., API keys) and broker-specific settings by adding them to the secrets tab. Here's the section on [how to set up secrets](https://lumibot.lumiwealth.com/deployment.html#secrets-configuration).
+3.	Deploy & Monitor: Follow our detailed instructions for Render or Replit, and once your bot is live, monitor its performance through your broker account. You can also check the logs on the deployment platform for any errors or warnings.
 
 # Secrets Configuration
 
