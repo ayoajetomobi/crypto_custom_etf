@@ -19,3 +19,4 @@ services:
       - key: STRATEGY_NAME
         # This should be the name of the strategy + the live config name
         value: "crypto_custom_etf"
+        
